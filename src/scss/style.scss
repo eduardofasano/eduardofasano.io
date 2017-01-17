@@ -1,14 +1,15 @@
-/* ---- reset ---- */
+
 body {
   margin: 0;
   font: normal 75% Arial, Helvetica, sans-serif;
 }
 
+/* ---- particles.js container ---- */
+
 canvas {
   display: block;
   vertical-align: bottom;
 }
-/* ---- particles.js container ---- */
 
 #particleJs {
   position: absolute;

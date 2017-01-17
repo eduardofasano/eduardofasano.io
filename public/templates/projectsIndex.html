@@ -1,0 +1,13 @@
+<section class="row">
+  <h1>Portfolio</h1>
+  <ul>
+    <li ng-repeat="project in projectsIndex.all" class="grid-item four columns li">
+      <a ui-sref="projectsShow({ id: project._id })">
+        <img ng-src="{{ project.image }}" class="u-full-width">
+      </a>
+      <h4>{{ project.title }}</h4>
+      <h6>{{ project.shortDescription }}</h6>
+      <button class="u-full-width" ui-sref="projectsShow({ id: project._id })" type="button">See More</button>
+    </li>
+  </ul>
+</section>
