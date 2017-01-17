@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css">
   <script src="/js/vendor.js" charset="utf-8"></script>
   <script src="/js/app.js" charset="utf-8"></script>
-  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" media="screen" href="/css/style.css">
 </head>
 <body ng-controller="MainController as main" ng-class="main.controllerName" class="u-full-width">
   <header>
@@ -15,11 +15,10 @@
       <ul>
         <li><a ui-sref="about" ui-sref-active="active">About</a></li>
         <li><a ui-sref="projects" ui-sref-active="active">Projects</a></li>
-        <!-- <li><a ui-sref="contact" ui-sref-active="active">Writing</a></li> -->
+        <li><a ui-sref="contact" ui-sref-active="active">Contact Me</a></li>
       </ul>
     </nav>
   </header>
-  <h1>YO!</h1>
   <main ui-view>
   </main>
 </body>
