@@ -3,6 +3,7 @@
 /* ---- particles.js container ---- */
 canvas {
   display: block;
+  z-index: 0;
 }
 
 #particleJs {
