@@ -15,4 +15,13 @@ Project.create([{
     githubLink: 'https://github.com/ruthlessammo/WDI-Project-1',
     herokuLink: 'http://presidentialdash.herokuapp.com/'
   }
+},{
+  title: 'Disaster Squawk',
+  shortDescription: 'Two player game for project 1',
+  description: 'A group project where you can learn about the world’s natural disasters in real time.  This project involved taking into account project management within a group and how to deal with conflicts. Making requests to MongoDB as well as the implementation of external APIs such as NASA and Twitter. The technology used was jQuery, Node.JS, Express, AJAX, external APIs MongoDB, HTML5 and SCSS.',
+  links: {
+    githubLink: 'https://github.com/eduardofasano/chuckecheese',
+    herokuLink: 'http://disastersquawk.herokuapp.com/'
+  },
+  image: 'http://i.imgur.com/YwZJ5C7.png'
 }]);

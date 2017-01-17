@@ -77,9 +77,16 @@ gulp.task('html', () => {
     .pipe(livereload());
 });
 
+// // assets
+// gulp.task('assets', () => {
+//   return gulp.src('src/assets/**/*.{ttf,woff,woff2,svg,png,jpg,jpeg}')
+//     .pipe(gulp.dest('public/assets'))
+//     .pipe(livereload());
+// });
+
 // images
 gulp.task('images', () => {
-  return gulp.src('src/images/*')
+  return gulp.src('src/assets/images/*.{ttf,woff,woff2,svg,png,jpg,jpeg}')
     .pipe(gulp.dest('public/images'))
     .pipe(livereload());
 });

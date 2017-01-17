@@ -1,20 +1,7 @@
+@import 'partials/header';
+@import 'partials/particle';
+@import 'base/variables';
 
 body {
-  margin: 0;
   font: normal 75% Arial, Helvetica, sans-serif;
-}
-
-/* ---- particles.js container ---- */
-
-canvas {
-  display: block;
-  vertical-align: bottom;
-}
-
-#particleJs {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-color: #2E3F59;
-  opacity: 0.7;
 }

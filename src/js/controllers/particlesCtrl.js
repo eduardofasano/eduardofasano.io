@@ -22,7 +22,7 @@ function particlesDrv($window, $log) {
             }
           },
           color: {
-            value: '#FFFFFF'
+            value: '#000000'
           },
           shape: {
             type: "circle",
@@ -53,7 +53,7 @@ function particlesDrv($window, $log) {
           line_linked: {
             enable: true,
             distance: 150,
-            color: '#ffffff',
+            color: '#000000',
             opacity: 0.4,
             width: 1
           },
