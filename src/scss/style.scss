@@ -6,11 +6,23 @@ body {
   font: normal 75% Arial, Helvetica, sans-serif;
 }
 
-// .socialIcons{
-//   color: black;
-//   z-index: 10;
-.socialImage {
-  width: 60px;
+footer{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  height: 100px;
+  width: 100vw;
   opacity: 1;
+  .socialIcons {
+    margin-top: 2.5%;
+    margin-left: 35%;
+    margin-right: 35%;
+    text-align: center;
+    .socialImage {
+      margin-left: 10px;
+      margin-right: 10px;
+      display: inline-block;
+      width: 40px;
+    }
+  }
 }
-// }
