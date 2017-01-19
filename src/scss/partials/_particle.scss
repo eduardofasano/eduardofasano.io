@@ -1,20 +1,39 @@
 @import 'base/variables';
 
-/* ---- particles.js container ---- */
-canvas {
-  display: block;
-  z-index: 0;
+.particlesBackground {
+  canvas {
+    display: block;
+    z-index: 0;
+  }
+  #particleJs {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #FFFFFF;
+    opacity: 0.6;
+    z-index: 0;
+  }
 }
 
-#particleJs {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  background-color: #FFFFFF;
-  opacity: 0.6;
-  z-index: 0;
+.particlesSidePanel {
+  canvas {
+    display: block;
+    z-index: 0;
+  }
+  #particleJs {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: $side-panel;
+    height: 100vh;
+    background-color: #FFFFFF;
+    opacity: 0.6;
+    z-index: 0;
+  }
 }

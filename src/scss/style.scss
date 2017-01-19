@@ -1,7 +1,13 @@
-@import 'partials/header';
-@import 'partials/homePage';
-@import 'partials/particle';
 @import 'base/variables';
+
+@import 'partials/header';
+@import 'partials/particle';
+@import 'partials/sideParticles';
+
+@import 'partials/homePage';
+@import 'partials/projectsIndex';
+
+
 
 body {
   font: normal 75% Arial, Helvetica, sans-serif;

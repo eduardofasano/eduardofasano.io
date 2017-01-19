@@ -1,0 +1,13 @@
+.leftPanel {
+  position: absolute;
+  height: 100vh;
+  width: $side-panel;
+  top: 0; left: 0; bottom: 0;
+  float: left;
+}
+
+.rightPanel {
+  top: 0; bottom: 0; left: $side-panel;
+  position: absolute;
+  float: right;
+}
