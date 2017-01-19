@@ -6,69 +6,59 @@
   top: 0; left: 0; bottom: 0; right: 0;
   height: 40vh;
   width: 60vw;
-  background-color: #000000;
-  opacity: 0.6;
+  // background-color: #FFFFFF;
+  // opacity: 0.6;
   .titleText {
     z-index: 999;
     text-align: center;
     h1 {
-      margin-bottom: 0;
+      font-family: $lato-font;
+      color: #000000;
+      opacity: 1;
+      font-size: 60px;
+      font-weight: 800;
+      margin-bottom: 30px;
     }
   }
   .descriptionText {
+    font-family: $lato-font;
+    position: absolute;
+    // vertical-align: middle;
+    width: 100%;
     z-index: 999;
     text-align: center;
     h5 {
+      font-weight: 800;
       margin-bottom: 0;
     }
   }
   .entryList {
+    font-family: $lato-font;
     text-align: center;
     .listContainer {
+      width: 100%;
+      position: absolute;
+      bottom: 30px;
       margin-bottom: 0;
       text-align: center;
       li {
         display: inline-block;
-        font-size: 18px;
+        font-size: 22px;
         font-weight: 800;
-        margin-right: 7.5%;
+        margin-left: 5%;
+        margin-right: 5%;
         a {
           text-decoration: none;
           transition: all 0.2s ease;
           &:hover {
             opacity: 0.5;
-            font-size: 24px;
+            font-size: 30px;
           }
         }
       }
     }
   }
 }
-
-// .entryList {
-//   .listContainer {
-//     text-align: center;
-//     li {
-//       text-decoration: none;
-//       line-height: 20px;
-//       font-size: 8px;
-//       // display: inline-block;
-//       // float: right;
-//       margin-left: 10px;
-//       color: black;
-//       a {
-//         display: inline-block;
-//         text-decoration: none;
-//         color: #000000;
-//         transition: all 0.2s ease;
-//         &:hover {
-//           opacity: 0.5;
-//         }
-//       }
-//     }
-//   }
-// }
-
 
 footer{
   position: fixed;
@@ -79,12 +69,12 @@ footer{
   opacity: 1;
   .socialIcons {
     margin-top: 2.5%;
-    margin-left: 35%;
-    margin-right: 35%;
+    margin-left: 30%;
+    margin-right: 30%;
     text-align: center;
     .socialImage {
-      margin-left: 10px;
-      margin-right: 10px;
+      margin-left: 20px;
+      margin-right: 20px;
       display: inline-block;
       width: 40px;
     }

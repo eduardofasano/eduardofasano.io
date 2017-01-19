@@ -1,2 +1,2 @@
 angular
-.module('eduardo-portfolio', ['ngResource', 'ui.router', 'satellizer']);
+.module('eduardo-portfolio', ['ngResource', 'ui.router', 'satellizer', 'angularTypewrite']);
