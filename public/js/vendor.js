@@ -44324,8 +44324,8 @@ angular.module('angularTypewrite').directive('typewrite', ['$timeout', function 
         }
 
         function updateIt(element, charIndex, arrIndex, text) {
-            if (charIndex <= iAttrs.text.length) {
-                updateValue(element, iAttrs.text.substring(0, charIndex) + cursor);
+            if (charIndex <= text.length) {
+                updateValue(element, text.substring(0, charIndex) + cursor);
                 charIndex++;
                 timer = $timeout(function () {
                     updateIt(element, charIndex, arrIndex, text);
