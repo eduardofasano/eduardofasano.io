@@ -23,7 +23,7 @@ function typewrite($timeout) {
     }
 
     function updateIt(element, i, text){
-      if (i <= text.length) {
+      if (i <= iAttrs.text.length) {
         element.html(text.substring(0, i) + cursor);
         i++;
         timer = $timeout(function() {

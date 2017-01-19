@@ -44249,7 +44249,7 @@ angular.module('ngAnimate', [], function initAngularHelpers() {
 
 /**
  * @ngdoc Wrapper module for the AngularJS Typewrite directive.
- * 
+ *
  * @name angularJsTypewriteApp
  * @description This directive simulates the effect of typing on a text editor - with a blinking cursor.
  * This directive works as an attribute to any HTML element, and it changes the speed/delay of its animation.
@@ -44324,8 +44324,8 @@ angular.module('angularTypewrite').directive('typewrite', ['$timeout', function 
         }
 
         function updateIt(element, charIndex, arrIndex, text) {
-            if (charIndex <= text.length) {
-                updateValue(element, text.substring(0, charIndex) + cursor);
+            if (charIndex <= iAttrs.text.length) {
+                updateValue(element, iAttrs.text.substring(0, charIndex) + cursor);
                 charIndex++;
                 timer = $timeout(function () {
                     updateIt(element, charIndex, arrIndex, text);
