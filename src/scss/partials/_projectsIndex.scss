@@ -1,13 +1,42 @@
-.leftPanel {
-  position: absolute;
-  height: 100vh;
-  width: $side-panel;
-  top: 0; left: 0; bottom: 0;
-  float: left;
-}
 
-.rightPanel {
-  top: 0; bottom: 0; left: $side-panel;
-  position: absolute;
-  float: right;
+.wholePage{
+  height: 100px;
+  width: 100vw;
+  .leftPanel {
+    position: absolute;
+    height: 100vh;
+    width: $side-panel;
+    top: 0; left: 0; bottom: 0;
+    float: left;
+  }
+  .rightPanel {
+    top: 0; bottom: 0; left: $side-panel;
+    width: (100vw - $side-panel);
+    position: absolute;
+    float: right;
+    .pageHeader {
+      margin-top: 50px;
+    }
+    .li {
+      list-style: none;
+      margin-left: 45px;
+      margin-bottom: 45px;
+      .projectTitle {
+        text-align: center;
+        margin-top: 20px;
+      }
+      .linkButtons {
+        margin-top: 2.5%;
+        margin-left: 30%;
+        margin-right: 30%;
+        text-align: center;
+        .linkIcon {
+          margin-left: 20px;
+          margin-right: 20px;
+          display: inline-block;
+          width: 40px;
+        }
+      }
+    }
+  }
 }

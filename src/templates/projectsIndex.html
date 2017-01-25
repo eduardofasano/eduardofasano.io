@@ -1,35 +1,39 @@
-<div class="leftPanel">
-  <div class="particlesSidePanel">
-    <div ng-controller="particlesCtrl">
-      <div particles-drv ng-show="showParticles">
+<div class="wholePage">
+  <div class="leftPanel">
+    <div class="particlesSidePanel">
+      <div ng-controller="particlesCtrl">
+        <div particles-drv ng-show="showParticles">
+        </div>
       </div>
     </div>
   </div>
-</div>
-
-<div class="rightPanel">
-  <header>
-    <nav class="navbar">
-      <ul class="container">
-        <li><a ui-sref="contact" ui-sref-active="active">Contact</a></li>
-        <li><a ui-sref="skills" ui-sref-active="active">Skills</a></li>
-        <li><a ui-sref="about" ui-sref-active="active">About</a></li>
-        <li><a ui-sref="projectsIndex" ui-sref-active="active">Projects</a></li>
+  <div class="rightPanel">
+    <header>
+      <nav class="navbar">
+        <ul class="container">
+          <li><a ui-sref="contact" ui-sref-active="active">Contact</a></li>
+          <li><a ui-sref="skills" ui-sref-active="active">Skills</a></li>
+          <li><a ui-sref="about" ui-sref-active="active">About</a></li>
+          <li><a ui-sref="projectsIndex" ui-sref-active="active">Projects</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section class="row">
+      <h1 class="pageHeader">Portfolio</h1>
+      <ul>
+        <li ng-repeat="project in projectsIndex.all" class="grid-item five columns li">
+          <a ui-sref="projectsShow({ id: project._id })">
+            <img ng-src="{{ project.image }}" class="u-full-width">
+          </a>
+          <h4 class="projectTitle">{{ project.title }}</h4>
+          <h6 class="projectShortDescription">{{ project.shortDescription }}</h6>
+          <div class="linkButtons">
+            <a href="{{ project.githubLink }}"><img src="/images/github.svg" alt="gitHub" class="linkIcon"></a>
+            <a href="{{ project.herokuLink }}"><img src="/images/heroku.svg" alt="heroku" class="linkIcon"></a>
+          </div>
+          <!-- <button class="u-full-width" ui-sref="projectsShow({ id: project._id })" type="button">See More</button> -->
+        </li>
       </ul>
-    </nav>
-  </header>
-
-  <section class="row">
-    <h1>Portfolio</h1>
-    <ul>
-      <li ng-repeat="project in projectsIndex.all" class="grid-item four columns li">
-        <a ui-sref="projectsShow({ id: project._id })">
-          <img ng-src="{{ project.image }}" class="u-full-width">
-        </a>
-        <h4>{{ project.title }}</h4>
-        <h6>{{ project.shortDescription }}</h6>
-        <button class="u-full-width" ui-sref="projectsShow({ id: project._id })" type="button">See More</button>
-      </li>
-    </ul>
-  </section>
+    </section>
+  </div>
 </div>
