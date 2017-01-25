@@ -19,17 +19,17 @@
       </nav>
     </header>
     <section class="row">
-      <h1 class="pageHeader">Portfolio</h1>
-      <ul>
+      <h3 class="pageHeader" typewrite blink-cursor="true" type-delay="100" blink-delay="1s" text="Here are some of my development projects..."></h3>
+      <ul class="projectList">
         <li ng-repeat="project in projectsIndex.all" class="grid-item five columns li">
+          <h5 class="projectTitle">{{ project.title }}</h5>
           <a ui-sref="projectsShow({ id: project._id })">
-            <img ng-src="{{ project.image }}" class="u-full-width">
+            <img ng-src="{{ project.image }}" class="u-full-width projectImage">
           </a>
-          <h4 class="projectTitle">{{ project.title }}</h4>
           <h6 class="projectShortDescription">{{ project.shortDescription }}</h6>
           <div class="linkButtons">
-            <a href="{{ project.githubLink }}"><img src="/images/github.svg" alt="gitHub" class="linkIcon"></a>
-            <a href="{{ project.herokuLink }}"><img src="/images/heroku.svg" alt="heroku" class="linkIcon"></a>
+            <a ng-href="http://{{project.githubLink}}">{{project.githubLink}}<img src="/images/github.svg" alt="gitHub" class="linkIcon" id="gitHub"></a>
+            <a ng-href="http://{{project.herokuLink}}">{{project.herokuLink}}<img src="/images/heroku.svg" alt="heroku" class="linkIcon" id="heroku"></a>
           </div>
           <!-- <button class="u-full-width" ui-sref="projectsShow({ id: project._id })" type="button">See More</button> -->
         </li>
