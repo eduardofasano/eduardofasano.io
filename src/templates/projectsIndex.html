@@ -28,8 +28,9 @@
           </a>
           <h6 class="projectShortDescription">{{ project.shortDescription }}</h6>
           <div class="linkButtons">
-            <a ng-href="http://{{project.githubLink}}">{{project.githubLink}}<img src="/images/github.svg" alt="gitHub" class="linkIcon" id="gitHub"></a>
-            <a ng-href="http://{{project.herokuLink}}">{{project.herokuLink}}<img src="/images/heroku.svg" alt="heroku" class="linkIcon" id="heroku"></a>
+            <p>{{project.githubLink}}</p>
+            <a ng-href="{{ project.githubLink }}" target="_blank">{{project.githubLink}}<img src="/images/github.svg" alt="gitHub" class="linkIcon" id="gitHub"></a>
+            <a ng-href="{{ project.herokuLink }}" target="_blank">{{project.herokuLink}}<img src="/images/heroku.svg" alt="heroku" class="linkIcon" id="heroku"></a>
           </div>
           <!-- <button class="u-full-width" ui-sref="projectsShow({ id: project._id })" type="button">See More</button> -->
         </li>

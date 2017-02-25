@@ -24,16 +24,16 @@ Project.create([{
   title: 'Bored.',
   shortDescription: 'Bored? Make a board! Create, clip, post and follow boards of images and videos',
   description: 'Bored? Make a board! Inspired by Pinterest Bored. allows users to create boards of images and videos which they can then share with the world. Users can clip and paste posts from boards they like onto their own. Technical challenges: front and back end requests to render content using Angular.js. Technology used: Angular.js, jQuery, Node.JS, Express, AJAX, authentication, MongoDB, HTML5 and SCSS.',
+  image: '/images/bored1.png',
   githubLink: 'https://github.com/janemaguire/boardapp',
-  herokuLink: 'https://bored-app.herokuapp.com/',
-  image: '/images/bored1.png'
+  herokuLink: 'https://bored-app.herokuapp.com/'
 },{
   title: 'Farm-Savour',
   shortDescription: 'Bored? Make a board! Create, clip, post and follow boards of images and videos',
   description: 'Farm Savour is a flash sale, and communal-buying eCommerce platform where shoppers can collectively support artisans and craftsmen by ordering produce for a predefined period of time. During this time, the more people buy, the lower the price will be once the sale ends, for everyone. Farms and farmers markets embody a lot of the good that lead to strong communities - this platform equally balances the needs of craftsmen, artisans, farmers and shoppers to help enjoy and share amazing produce. Technology used: Angular.js, Rails, jQuery, Ruby, Node.JS, Authentication, MongoDB, HTML5 and SCSS.',
+  image: '/images/FS1.png',
   githubLink: 'https://github.com/eduardofasano/final-project-frontend',
-  herokuLink: 'https://farm-savour-frontend.herokuapp.com/#/',
-  image: '/images/FS1.png'
+  herokuLink: 'https://farm-savour-frontend.herokuapp.com/#/'
 }], (err, projects) => {
   if(err) console.log('There was an error creating projects', err);
 

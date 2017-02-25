@@ -14,6 +14,8 @@ header {
     z-index: 1;
     .container {
       li {
+        font-family: $didact-gothic-font;
+        font-weight: 800;
         text-decoration: none;
         line-height: 45px;
         font-size: 18px;

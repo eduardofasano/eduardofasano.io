@@ -1,3 +1,25 @@
-<div class="home">
-  <h1>Welcome to my Portfolio</h1>
+<div class="wholePage">
+  <div class="leftPanel">
+    <div class="particlesSidePanel">
+      <div ng-controller="particlesCtrl">
+        <div particles-drv ng-show="showParticles">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="rightPanel">
+    <header>
+      <nav class="navbar">
+        <ul class="container">
+          <li><a ui-sref="contact" ui-sref-active="active">Contact</a></li>
+          <li><a ui-sref="skills" ui-sref-active="active">Skills</a></li>
+          <li><a ui-sref="about" ui-sref-active="active">About</a></li>
+          <li><a ui-sref="projectsIndex" ui-sref-active="active">Projects</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section class="row">
+      <h3 class="pageHeader" typewrite blink-cursor="true" type-delay="150" blink-delay="1s" text="So - to make a long story short..."></h3>
+    </section>
+  </div>
 </div>

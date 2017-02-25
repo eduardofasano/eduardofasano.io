@@ -17,6 +17,7 @@
     "express-ejs-layouts": "^2.2.0",
     "mongoose": "^4.7.6",
     "morgan": "^1.7.0",
+    "sendgrid": "^4.7.1",
     "typer-js": "^2.4.1"
   },
   "devDependencies": {

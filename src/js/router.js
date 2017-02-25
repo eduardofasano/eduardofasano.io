@@ -18,6 +18,10 @@ function Router($stateProvider, $urlRouterProvider) {
     url: '/about',
     templateUrl: '/templates/about.html'
   })
+  .state('contactForm', {
+    url: '/contact',
+    templateUrl: '/templates/contactForm.html'
+  })
   .state('home', {
     url: '/',
     templateUrl: '/templates/homePage.html'
