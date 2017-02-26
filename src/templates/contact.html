@@ -1,4 +1,14 @@
-  <form ng-submit="emailCtrl.sendMail()">
+<h1>Contact Form</h1>
+<div class="twelve columns">
+  <form ng-submit="contact.sendMail()">
+    <input type="text" name="name" placeholder="Your name" ng-model="contact.email.name">
+    <input type="text" name="email" placeholder="Your email" ng-model="contact.email.email">
+    <textarea name="message" rows="8" cols="80" placeholder="Message" ng-model="contact.email.message"></textarea>
+    <button>Send</button>
+  </form>
+</div>
+
+  <!-- <form ng-submit="EmailNewController.send()">
     <h1>Contact Form</h1>
     <div class="twelve columns">
       <label>Your Name</label>
@@ -17,4 +27,4 @@
       <input type="textbox" name="quantity" placeholder="Type your email here!" class="u-full-width">
     </div>
     <button>Send</button>
-  </form>
+  </form> -->

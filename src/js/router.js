@@ -18,9 +18,10 @@ function Router($stateProvider, $urlRouterProvider) {
     url: '/about',
     templateUrl: '/templates/about.html'
   })
-  .state('contactForm', {
+  .state('contact', {
     url: '/contact',
-    templateUrl: '/templates/contactForm.html'
+    templateUrl: '/templates/contact.html',
+    controller: 'ContactController as contact'
   })
   .state('home', {
     url: '/',
