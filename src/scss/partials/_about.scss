@@ -5,41 +5,66 @@
     position: fixed;
     height: 100vh;
     width: $side-panel;
-    top: 0; left: 0; bottom: 0;
+    top: $navbar-height; left: 0; bottom: 0;
     float: left;
   }
   .rightPanel {
-    top: 0; bottom: 0; left: $side-panel;
+    top: $navbar-height; bottom: 0; left: $side-panel;
     width: (100vw - $side-panel);
     position: absolute;
       .pageHeader {
         font-weight: 800;
-        margin-left: 45px;
-        margin-top: 60px;
+        margin-left: 20px;
+        margin-top: 15px;
         margin-bottom: 30px;
+        position: fixed;
+        background-color: blue;
+        float: right;
+        display: block;
       }
-    #arrowImg {
-      position: fixed;
-      margin-top: 7%;
-      float: left;
-    }
-    .pageHeader {
-      position: fixed;
-    }
     .timeline {
         position: relative;
         background-color: green;
         height: 95%;
-
+        #arrowImg {
+          background-color: pink;
+          position: fixed;
+          margin-top: 6%;
+          float: left;
+          height: 75%;
+        }
       .lifeContainer {
         position: absolute;
-        height: 100%;
+        width: 90%;
+        top: 12.5%; left: 3.5%; bottom: 25%; right: 10px;
+        height: 85%;
         background-color: red;
-        // .lifeEvent {
-        //   position: absolute;
-        //   height: 50px;
-        //   background-color: red;
-        // }
+        li {
+          display: block;
+          margin-top: 5px;
+          margin-bottom: 5px;
+          position: relative;
+          height: 100px;
+          background-color: purple;
+          .eventImage {
+            display: inline-block;
+            position: absolute;
+            top: 5%; left: 5px; bottom: 5%; right: 5px;
+            float: left;
+            height: 90%;
+            width: 20%;
+            background-color: pink;
+          }
+          .eventDescription {
+            display: inline-block;
+            position: absolute;
+            top: 5%; left: 17.5%; bottom: 5%; right: 5px;
+            float: right;
+            height: 90%;
+            width: 77.5%;
+            background-color: pink;
+          }
+        }
       }
     }
   }
