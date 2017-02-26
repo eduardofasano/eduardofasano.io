@@ -1,0 +1,46 @@
+.wholePage{
+  height: 100px;
+  width: 100vw;
+  .leftPanel {
+    position: fixed;
+    height: 100vh;
+    width: $side-panel;
+    top: 0; left: 0; bottom: 0;
+    float: left;
+  }
+  .rightPanel {
+    top: 0; bottom: 0; left: $side-panel;
+    width: (100vw - $side-panel);
+    position: absolute;
+      .pageHeader {
+        font-weight: 800;
+        margin-left: 45px;
+        margin-top: 60px;
+        margin-bottom: 30px;
+      }
+    #arrowImg {
+      position: fixed;
+      margin-top: 7%;
+      float: left;
+    }
+    .pageHeader {
+      position: fixed;
+    }
+    .timeline {
+        position: relative;
+        background-color: green;
+        height: 95%;
+
+      .lifeContainer {
+        position: absolute;
+        height: 100%;
+        background-color: red;
+        // .lifeEvent {
+        //   position: absolute;
+        //   height: 50px;
+        //   background-color: red;
+        // }
+      }
+    }
+  }
+}
