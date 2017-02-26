@@ -1,5 +1,5 @@
 <div class="wholePage">
-  <div class="leftPanel">
+  <div class="leftPanelAbout">
     <div class="particlesSidePanel">
       <div ng-controller="particlesCtrl">
         <div particles-drv ng-show="showParticles">
@@ -7,20 +7,37 @@
       </div>
     </div>
   </div>
-  <div class="rightPanel">
+  <div class="rightPanelAbout">
     <header>
       <nav class="navbar">
         <ul class="container">
           <li><a ui-sref="contact" ui-sref-active="active">Contact</a></li>
-          <li><a ui-sref="skills" ui-sref-active="active">Skills</a></li>
           <li><a ui-sref="about" ui-sref-active="active">About</a></li>
           <li><a ui-sref="projectsIndex" ui-sref-active="active">Projects</a></li>
         </ul>
       </nav>
     </header>
     <section class="row twelve columns timeline">
-      <h3 class="pageHeader" typewrite blink-cursor="true" type-delay="100" blink-delay="1s" text="So - to make a long story short . . ."></h3>
+      <h3 class="aboutTitle" typewrite blink-cursor="true" type-delay="100" blink-delay="1s" text="So - to make a long story short . . ."></h3>
       <ul class="row ten columns lifeContainer">
+        <li class="twelve columns lifeEvent">
+          <div class="eventImage three columns">
+          </div>
+          <div class="eventDescription three columns">
+          </div>
+        </li>
+        <li class="twelve columns lifeEvent">
+          <div class="eventImage three columns">
+          </div>
+          <div class="eventDescription three columns">
+          </div>
+        </li>
+        <li class="twelve columns lifeEvent">
+          <div class="eventImage three columns">
+          </div>
+          <div class="eventDescription three columns">
+          </div>
+        </li>
         <li class="twelve columns lifeEvent">
           <div class="eventImage three columns">
           </div>
@@ -66,5 +83,7 @@
       </ul>
       <img id="arrowImg" src="/images/arrow.svg" alt="arrrow">
     </section>
+    <footer class="twelve columns">
+    </footer>
   </div>
 </div>

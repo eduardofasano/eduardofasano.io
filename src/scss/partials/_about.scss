@@ -1,26 +1,28 @@
 .wholePage{
   height: 100px;
   width: 100vw;
-  .leftPanel {
+  .leftPanelAbout {
     position: fixed;
     height: 100vh;
     width: $side-panel;
     top: $navbar-height; left: 0; bottom: 0;
     float: left;
   }
-  .rightPanel {
+  .rightPanelAbout {
     top: $navbar-height; bottom: 0; left: $side-panel;
     width: (100vw - $side-panel);
     position: absolute;
-      .pageHeader {
+      .aboutTitle {
         font-weight: 800;
-        margin-left: 20px;
         margin-top: 15px;
-        margin-bottom: 30px;
-        position: fixed;
+        margin-left: 20px;
+        margin-bottom: 0px;
+        position: relative;
         background-color: blue;
         float: right;
         display: block;
+        z-index: 1;
+        width: 92.5%;
       }
     .timeline {
         position: relative;
@@ -29,20 +31,20 @@
         #arrowImg {
           background-color: pink;
           position: fixed;
-          margin-top: 6%;
+          margin-top: 2%;
           float: left;
-          height: 75%;
+          height: 80%;
         }
       .lifeContainer {
         position: absolute;
         width: 90%;
-        top: 12.5%; left: 3.5%; bottom: 25%; right: 10px;
+        top: 10.5%; left: 3.5%; bottom: 25%; right: 10px;
         height: 85%;
         background-color: red;
         li {
           display: block;
-          margin-top: 5px;
-          margin-bottom: 5px;
+          margin-top: 2.5px;
+          margin-bottom: 2.5px;
           position: relative;
           height: 100px;
           background-color: purple;
@@ -66,6 +68,13 @@
           }
         }
       }
+    }
+    footer {
+      background-color: rgba(255,255,255,0.9);
+      width: 100%;
+      position: fixed;
+      bottom: 0px;
+      height: 45px;
     }
   }
 }
