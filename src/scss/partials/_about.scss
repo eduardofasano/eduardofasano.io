@@ -14,11 +14,11 @@
     position: absolute;
       .aboutTitle {
         font-weight: 800;
-        margin-top: 15px;
+        margin-top: 0px;
         margin-left: 20px;
         margin-bottom: 0px;
         position: relative;
-        background-color: blue;
+        // background-color: blue;
         float: right;
         display: block;
         z-index: 1;
@@ -26,10 +26,10 @@
       }
     .timeline {
         position: relative;
-        background-color: green;
+        // background-color: green;
         height: 95%;
         #arrowImg {
-          background-color: pink;
+          // background-color: pink;
           position: fixed;
           margin-top: 2%;
           float: left;
@@ -40,22 +40,23 @@
         width: 90%;
         top: 10.5%; left: 3.5%; bottom: 25%; right: 10px;
         height: 85%;
-        background-color: red;
+        // background-color: red;
         li {
           display: block;
           margin-top: 2.5px;
           margin-bottom: 2.5px;
           position: relative;
           height: 100px;
-          background-color: purple;
+          // border-bottom: 1px solid grey;
+          // background-color: purple;
           .eventImage {
             display: inline-block;
             position: absolute;
             top: 5%; left: 5px; bottom: 5%; right: 5px;
             float: left;
-            height: 90%;
+            height: 80%;
             width: 20%;
-            background-color: pink;
+            // background-color: pink;
             .imageFile {
               height: 100%;
               vertical-align: middle;
@@ -70,15 +71,15 @@
             float: right;
             height: 90%;
             width: 77.5%;
-            background-color: pink;
+            // background-color: pink;
             .eventDescriptionText {
               position: absolute;
               vertical-align: middle;
               top: 50%; left: 50%;
               transform: translate(-50%,-50%);
-              background-color: yellow;
+              // background-color: yellow;
               width: 100%;
-              font-size: 20px;
+              font-size: 18px;
             }
           }
         }
