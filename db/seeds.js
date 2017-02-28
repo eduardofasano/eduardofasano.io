@@ -7,12 +7,12 @@ mongoose.connect(mongoUri);
 Project.collection.drop();
 
 Project.create([{
-  title: 'Dr. Kawashima\'s Memory Game',
-  shortDescription: 'Test and train your memory under the guidance of the renowned Dr. Kawashima',
-  description: 'A spin on Nintendo\'s blockbuster 3DS Brain-Training. This version of the game built on the original by adding different levels of difficulty, which flex the size of the grid to remember, as well as giving users the optionality of using different available languages: english, simplified chinese characters, numbers and... emojis!! Technoglogies used: Javascript, HTML, CSS, heroku-hosting.',
-  image: '/images/kawashima1.png',
-  githubLink: 'https://github.com/eduardofasano/WDI_LDN_Project-1',
-  herokuLink: 'https://project-kawashima.herokuapp.com/'
+  title: 'Farm-Savour',
+  shortDescription: 'Farm Savour is a flash sale, and communal-buying eCommerce platform for seasonal foods',
+  description: 'Farm Savour is a flash sale, and communal-buying eCommerce platform where shoppers can collectively support artisans and craftsmen by ordering produce for a predefined period of time. During this time, the more people buy, the lower the price will be once the sale ends, for everyone. Farms and farmers markets embody a lot of the good that lead to strong communities - this platform equally balances the needs of craftsmen, artisans, farmers and shoppers to help enjoy and share amazing produce. Technology used: Angular.js, Rails, jQuery, Ruby, Node.JS, Authentication, MongoDB, HTML5 and SCSS.',
+  image: '/images/FS1.png',
+  githubLink: 'https://github.com/eduardofasano/final-project-frontend',
+  herokuLink: 'https://farm-savour-frontend.herokuapp.com/#/'
 },{
   title: 'Disaster Squawk',
   shortDescription: 'Learn and hear about the world\'s ongoing natural disasters in real time',
@@ -28,12 +28,12 @@ Project.create([{
   githubLink: 'https://github.com/janemaguire/boardapp',
   herokuLink: 'https://bored-app.herokuapp.com/'
 },{
-  title: 'Farm-Savour',
-  shortDescription: 'Bored? Make a board! Create, clip, post and follow boards of images and videos',
-  description: 'Farm Savour is a flash sale, and communal-buying eCommerce platform where shoppers can collectively support artisans and craftsmen by ordering produce for a predefined period of time. During this time, the more people buy, the lower the price will be once the sale ends, for everyone. Farms and farmers markets embody a lot of the good that lead to strong communities - this platform equally balances the needs of craftsmen, artisans, farmers and shoppers to help enjoy and share amazing produce. Technology used: Angular.js, Rails, jQuery, Ruby, Node.JS, Authentication, MongoDB, HTML5 and SCSS.',
-  image: '/images/FS1.png',
-  githubLink: 'https://github.com/eduardofasano/final-project-frontend',
-  herokuLink: 'https://farm-savour-frontend.herokuapp.com/#/'
+  title: 'Dr. Kawashima\'s Memory Game',
+  shortDescription: 'Test and train your memory under the guidance of the renowned Dr. Kawashima',
+  description: 'A spin on Nintendo\'s blockbuster 3DS Brain-Training. This version of the game built on the original by adding different levels of difficulty, which flex the size of the grid to remember, as well as giving users the optionality of using different available languages: english, simplified chinese characters, numbers and... emojis!! Technoglogies used: Javascript, HTML, CSS, heroku-hosting.',
+  image: '/images/kawashima1.png',
+  githubLink: 'https://github.com/eduardofasano/WDI_LDN_Project-1',
+  herokuLink: 'https://project-kawashima.herokuapp.com/'
 }], (err, projects) => {
   if(err) console.log('There was an error creating projects', err);
 
