@@ -37,7 +37,7 @@
         }
       .lifeContainer {
         position: absolute;
-        width: 90%;
+        width: 80%;
         top: 10.5%; left: 3.5%; bottom: 25%; right: 10px;
         height: 85%;
         // background-color: red;
@@ -54,14 +54,17 @@
             position: absolute;
             top: 5%; left: 5px; bottom: 5%; right: 5px;
             float: left;
-            height: 80%;
+            height: 90%;
             width: 20%;
-            // background-color: pink;
+            background-color: pink;
             .imageFile {
-              height: 100%;
+              height: 90%;
               vertical-align: middle;
               display: block;
-              margin: auto;
+              // margin: auto;
+              position: absolute;
+              top: 50%; left: 50%;
+              transform: translate(-50%,-50%);
             }
           }
           .eventDescription {
@@ -71,13 +74,13 @@
             float: right;
             height: 90%;
             width: 77.5%;
-            // background-color: pink;
+            background-color: pink;
             .eventDescriptionText {
               position: absolute;
               vertical-align: middle;
               top: 50%; left: 50%;
               transform: translate(-50%,-50%);
-              // background-color: yellow;
+              background-color: yellow;
               width: 100%;
               font-size: 18px;
             }
@@ -96,29 +99,17 @@
 }
 
 #durex {
-  height: 80%;
-  display: block;
-  margin: 0 auto;
-  margin-top: 9px;
+  height: 70%;
 }
 
 #permira {
-  height: 55%;
-  display: block;
-  margin: 0 auto;
-  margin-top: 12px;
+  height: 50%;
 }
 
 #merrill {
-  height: 57%;
-  display: block;
-  margin: 0 auto;
-  margin-top: 15px;
+  height: 50%;
 }
 
 #karhoo {
-  height: 58.5%;
-  display: block;
-  margin: 0 auto;
-  margin-top: 17.5px;
+  height: 50.0%;
 }
